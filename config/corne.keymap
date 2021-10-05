@@ -105,7 +105,7 @@
 //                    |     |Rct(s|     |   |S(spe|T(tau|TO 0 |
                         bindings = <
 &trans &to 0  &trans   &kp UP    &trans   &trans        &trans    &kp SPACE &kp Q   &trans    &trans    &trans
-&trans &kp D &kp LEFT &kp DOWN &kp RIGHT &trans        &kp ENTER &kp E     &kp A   &kp W    &kp D     &trans 
+&trans &kp UP &kp LEFT &kp DOWN &kp RIGHT &trans        &kp ENTER &kp E     &kp A   &kp W    &kp D     &trans 
 &trans &trans &kp X    &kp C    &trans    &kp V         &trans    &kp Q     &trans  &trans   &trans    &trans
                    &trans &trans  &kp RCTRL     &kp S  &kp T   &to 0 
                         >;
