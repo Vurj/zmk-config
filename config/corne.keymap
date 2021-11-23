@@ -46,9 +46,9 @@
                 };
         sym_layer {
                 bindings = <
-   &none  &none    &kp TILDE &kp LBKT &kp RBKT &kp none            &kp none  &kp £    &kp N8   &kp N9    &kp N0    &none
-   &none  &kp DLLR &kp UNDER &kp LBRC &kp RBRC &kp AT              &kp PIPE  &kp EQUAL &kp PLUS &kp MINUS &kp STAR  &none
-   &none  &kp EXCL &kp HASH  &kp LBKT &kp RBKT &kp TILDE           &kp AMPS  &kp LPAR  &kp RPAR &kp PRCNT &kp CARET &none
+   &none  &none    &kp TILDE &kp LBKT &kp RBKT &kp none            &none  &kp £    &kp DLLR  &kp CARET &none    &none
+   &none  &kp HASH &kp UNDER &kp LPAR &kp RPAR &kp AT              &kp PRCNT  &kp EQUAL &kp PLUS &kp MINUS &kp STAR  &none
+   &none  &kp EXCL &kp HASH  &kp LBRC &kp RBRC &none               &none     &kp PIPE &kp AMPS &kp PRCNT &kp CARET &none
                               &none   &none  &none                 &kp BSPC  &kp CAPS  &kp GRAVE
                         >;
                 };
