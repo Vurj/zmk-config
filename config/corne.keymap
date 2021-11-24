@@ -21,51 +21,51 @@
 
         default_layer {
             bindings = <
-   &trans  &kp Q      &kp W      &kp F       &kp P       &kp B     &kp J &kp L       &kp U       &kp Y      &kp SEMI   &trans 
-   &trans  &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHFT T &kp G     &kp M &mt RSHFT N &mt RCTRL E &mt RALT I &mt RGUI O &trans 
-   &trans  &kp Z      &kp X      &kp C       &kp D       &kp V     &kp K &kp H       &kp COMMA   &kp DOT    &kp FSLH   &trans 
+   &none  &kp Q      &kp W      &kp F       &kp P       &kp B     &kp J &kp L       &kp U       &kp Y      &kp SEMI   &none 
+   &none  &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHFT T &kp G     &kp M &mt RSHFT N &mt RCTRL E &mt RALT I &mt RGUI O &none 
+   &none  &kp Z      &kp X      &kp C       &kp D       &kp V     &kp K &kp H       &kp COMMA   &kp DOT    &kp FSLH   &none 
                                &lt 4 ESC &lt 3 TAB &lt 1 SPACE     &kp BSPC  &lt 2 RET &kp SQT
                         >;
                 };
         sym_layer {
                         bindings = <
-   &trans  &kp N1   &kp N2    &kp N3   &kp N4   &kp N5        &kp N6   &kp N7    &kp N8   &kp N9    &kp N0    &trans
-   &trans  &kp DLLR &kp UNDER &kp LBRC &kp RBRC &kp AT        &kp PIPE &kp EQUAL &kp PLUS &kp MINUS &kp STAR  &trans
-   &trans  &kp EXCL &kp HASH  &kp LBKT &kp RBKT &kp TILDE     &kp AMPS &kp LPAR  &kp RPAR &kp PRCNT &kp CARET &trans
-                              &trans   &trans  &trans         &kp BSPC    &kp CAPS    &kp GRAVE
+   &none  &kp N1   &kp N2    &kp N3   &kp N4   &kp N5        &kp N6   &kp N7    &kp N8   &kp N9    &kp N0    &none
+   &none  &kp DLLR &kp UNDER &kp LBRC &kp RBRC &kp AT        &kp PIPE &kp EQUAL &kp PLUS &kp MINUS &kp STAR  &none
+   &none  &kp EXCL &kp HASH  &kp LBKT &kp RBKT &kp TILDE     &kp AMPS &kp LPAR  &kp RPAR &kp PRCNT &kp CARET &none
+                              &none   &none  &none         &kp BSPC    &kp CAPS    &kp GRAVE
                         >;
                 };
 
         nav_layer {
                         bindings = <
-   &trans &trans   &trans   &trans    &trans    &trans    &trans   &kp PG_DN &kp UP   &kp PG_UP &trans  &trans
-   &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans    &kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END &trans
-   &trans &trans   &trans   &trans    &trans    &trans    &trans   &trans    &trans   &trans    &trans  &trans
-                             &kp ESC &kp TAB &kp SPACE    &kp RET &trans &to 5 
+   &none &none    &none    &none     &none     &none    &none    &kp PG_DN &kp UP   &kp PG_UP &none  &none
+   &none &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none    &kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END &none
+   &none &none    &none    &none     &none     &none    &none    &none     &none    &none     &none  &none
+                            &kp ESC &kp TAB &kp SPACE    &kp RET &none &to 5 
                         >;
                 };
         mouse_layer {
                         bindings = <
-   &trans &trans   &trans   &trans    &trans    &trans    &trans   &trans    &trans   &trans    &trans  &trans
-   &trans &trans   &trans   &trans    &trans    &trans    &trans   &trans    &trans   &trans    &trans  &trans
-   &trans &trans   &trans   &trans    &trans    &trans    &trans   &trans    &trans   &trans    &trans  &trans
-                              &trans  &trans    &trans    &trans   &trans    &trans 
+   &none &none   &none   &none    &none    &none    &none   &none    &none   &none    &none  &none
+   &none &none   &none   &none    &none    &none    &none   &none    &none   &none    &none  &none
+   &none &none   &none   &none    &none    &none    &none   &none    &none   &none    &none  &none
+                           &none  &none    &none    &none   &none    &none 
                         >;
                 };
         btf_layer {
                         bindings = <
-   &trans &kp F1   &kp F2     &kp F3 &kp F4 &kp F5   &kp F6       &kp F7       &kp F8       &kp F9        &kp F10 &trans
-   &trans &kp F11  &bt BT_CLR &trans &trans &trans   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &kp F12 &trans
-   &trans &trans   &trans     &trans &trans &trans   &bt BT_SEL 4 &trans       &trans       &trans        &trans  &trans
-                        &trans &trans &trans         &trans &trans &trans
+   &none &kp F1   &kp F2     &kp F3 &kp F4 &kp F5   &kp F6       &kp F7       &kp F8       &kp F9        &kp F10 &none
+   &none &kp F11  &bt BT_CLR &none  &none  &none    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &kp F12 &none
+   &none &none    &none      &none  &none  &none    &bt BT_SEL 4 &none        &none        &none         &none   &none
+                             &none &none &none         &none &none &none
                         >;
                 };
         gaming_layer {
                         bindings = <
-   &trans  &kp TAB   &kp Q &kp W &kp E &kp R       &trans &trans &trans &trans &trans &trans
-   &trans  &kp LSHFT &kp A &kp S &kp D &kp F       &trans &trans &trans &trans &trans &trans
-   &trans  &kp LCTRL &kp Z &kp X &kp C &kp V       &trans &trans &trans &trans &trans &trans
-                  &kp ESC &kp LALT &kp SPACE       &trans &trans &to 0
+   &none  &kp TAB   &kp Q &kp W &kp E &kp R       &none &none &none &none &none &none
+   &none  &kp LSHFT &kp A &kp S &kp D &kp F       &none &none &none &none &none &none
+   &none  &kp LCTRL &kp Z &kp X &kp C &kp V       &none &none &none &none &none &none
+                 &kp ESC &kp LALT &kp SPACE       &none &none &to 0
                         >;
                 };
         };
