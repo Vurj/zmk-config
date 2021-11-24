@@ -52,7 +52,7 @@
             bindings = <
    &none  &kp Q      &kp W      &kp F       &kp P       &kp B     &kp J &kp L       &kp U       &kp Y      &kp SEMI   &none 
    &none  &am LGUI A &am LALT R &am LCTRL S &am LSHFT T &kp G     &kp M &am RSHFT N &am RCTRL E &am RALT I &am RGUI O &none 
-   &none  &kp Z      &kp X      &kp C       &kp D       &kp V     &kp K &kp H       &kp COMMA   &kp DOT    &kp FSLH   &none 
+   &none  &kp Z      &kp X      &kp C       &kp D       &kp V     &kp K &kp H       &kp COMMA   &ht DOT EXCEL &kp FSLH   &none 
                                &lt 4 ESC &sk LSHFT &lt 1 SPACE     &kp BSPC  &lt 2 RET &kp SQT
                         >;
                 };
