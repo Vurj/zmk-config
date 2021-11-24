@@ -20,11 +20,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-// -----------------------------------------------------------------------------------------
-// |      |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  |      |
-// |      |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |      |
-// |      |  Z  |  X  |  C  |  V  |  B  |   |  K  |  H   |  ,  |  .  |  /  |      |
-//                    | ESC | TAB | SPC |   | BSC | ENT  |  '  |
             bindings = <
    &trans  &kp Q      &kp W      &kp F       &kp P       &kp B     &kp J &kp L       &kp U       &kp Y      &kp SEMI   &trans 
    &trans  &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHFT T &kp G     &kp M &mt RSHFT N &mt RCTRL E &mt RALT I &mt RGUI O &trans 
@@ -33,11 +28,6 @@
                         >;
                 };
         sym_layer {
-// -----------------------------------------------------------------------------------------
-// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
-// |      |  $  |  _  |  {  |  }  |  @  |   |  |  |  =  |  +  |  -  |  *  |      |
-// |      |  !  |  #  |  [  |  ]  |  ~  |   |  &  |  (  |  )  |  %  |  ^  |      |
-//                    |     |     |XXXXX|   | BSC | CAPS|  `  |
                         bindings = <
    &trans  &kp N1   &kp N2    &kp N3   &kp N4   &kp N5        &kp N6   &kp N7    &kp N8   &kp N9    &kp N0    &trans
    &trans  &kp DLLR &kp UNDER &kp LBRC &kp RBRC &kp AT        &kp PIPE &kp EQUAL &kp PLUS &kp MINUS &kp STAR  &trans
@@ -47,11 +37,6 @@
                 };
 
         nav_layer {
-// -----------------------------------------------------------------------------------------
-// |      | TO6 |     |     |     |     |   |     | PgD |  ^  | PgU |     |      |
-// |      |     |     |     |     |     |   | HOME|  <  |  v  |  >  | END |      |
-// |      |     |     |     |     |     |   |     |     |     |     |     |      | // TODO: Fix this row when &mkp is committed
-//                    | ESC | TAB | SPC |   |     |XXXXX| TO5 |
                         bindings = <
    &trans &to 6   &trans   &trans    &trans    &trans    &trans   &kp PG_DN &kp UP   &kp PG_UP &trans  &trans
    &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans    &kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END &trans
@@ -60,11 +45,6 @@
                         >;
                 };
         mouse_layer {
-// -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |     | MwD |  ^  | MwU |     |      |
-// |      |     |     |     |     |     |   |     |  <  |  v  |  >  |     |      |
-// |      |     |     |     |     |     |   |     |     |     |     |     |      | // TODO: Fix this row when &mkp is committed
-//                    |     |XXXXX|     |   | LMB | RMB | M3  |
                         bindings = <
    &trans &trans   &trans   &trans    &trans    &trans    &trans   &trans    &trans   &trans    &trans  &trans
    &trans &trans   &trans   &trans    &trans    &trans    &trans   &trans    &trans   &trans    &trans  &trans
@@ -73,11 +53,6 @@
                         >;
                 };
         btf_layer {
-// -----------------------------------------------------------------------------------------
-// |      |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7 |  F8 |  F9 | F10 |      |
-// |      | F11 |BTClr|     |     |     |   | BT0 | BT1 | BT2 | BT3 | F12 |      |
-// |      |     |     |     |     |     |   | BT4 |     |     |     |     |      | // TODO: Fix this row when &mkp is committed
-//                    |XXXXX|     |     |   |     |     |     |
                         bindings = <
    &trans &kp F1   &kp F2     &kp F3 &kp F4 &kp F5   &kp F6       &kp F7       &kp F8       &kp F9        &kp F10 &trans
    &trans &kp F11  &bt BT_CLR &trans &trans &trans   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &kp F12 &trans
@@ -86,11 +61,6 @@
                         >;
                 };
         gaming_layer {
-// -----------------------------------------------------------------------------------------
-// |      | TAB |  Q  |  W  |  E  |  R  |   |     |     |     |     |     |      |
-// |      | Shft|  A  |  S  |  D  |  F  |   |     |     |     |     |     |      |
-// |      | Ctr |  Z  |  X  |  C  |  V  |   |     |     |     |     |     |      |
-//                    | GUI | ALT | SPC |   |     |     | TO 0|
                         bindings = <
    &trans  &kp TAB   &kp Q &kp W &kp E &kp R       &trans &trans &trans &trans &trans &trans
    &trans  &kp LSHFT &kp A &kp S &kp D &kp F       &trans &trans &trans &trans &trans &trans
@@ -99,11 +69,6 @@
                         >;
                 };
         nick_layer {
-// -----------------------------------------------------------------------------------------
-// | TO 0 |     |  ^  |     |     |     |      |     |      |
-// |E(blk)|  <  |  V  |  >  |     |     |   |S(spe|A(at |W(ju |E(blk|D(gra)|      |
-// |      |  X  |C    |     |V(pau|     |   |     |Q(str| WD? |     |     |      |
-//                    |     |Rct(s|     |   |S(spe|T(tau|TO 0 |
                         bindings = <
 &trans &to 0  &trans   &kp UP    &trans   &trans        &trans    &kp SPACE &kp Q   &trans    &trans    &trans
 &trans &kp RCTRL &kp LEFT &kp DOWN &kp RIGHT &trans        &kp ENTER &kp E     &kp A   &kp W    &kp D     &trans 
