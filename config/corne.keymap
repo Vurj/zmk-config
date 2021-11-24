@@ -7,6 +7,16 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+        combo_##NAME { \
+            timeout-ms = <TERM>; \
+            bindings = <BINDINGS>; \
+            key-positions = <KEYPOS>; \
+            layers = <LAYERS>; \
+        };
 
 &mt {
     flavor = "hold-preferred";
@@ -20,7 +30,7 @@
 };
 // ~ > ¬   # > £   | > ~  ==a~~ |||~
 
-#include "combos.dtsi"
+
 / {
     behaviors {
         am: alpha_mods{
@@ -48,6 +58,22 @@
             bindings = <&kp T>, <&kp TAB>;
             mods = <(MOD_LGUI|MOD_LALT|MOD_LCTRL)>;                
         };
+
+    };
+    combos {
+        compatible = "zmk,combos";
+
+COMBO(esc,     &kp ESC,     14  15,       0, 40)
+COMBO(tab,     &kp TAB,     15  16,       0, 40)
+COMBO(quote,   &kp SQT,     19  20,       0, 40)
+COMBO(dquote,  &kp AT,      20  21,       0, 40)
+COMBO(grave,   &kp PIPE,    21, 22        0, 40)
+
+COMBO(sym,     &to 1,       16, 19        0, 40)
+COMBO(sym,     &to 5,       29, 30        0, 40)
+COMBO(sym,     &to 2,       38, 39        0, 40)
+
+COMBO(gameEsc, &kp ESC,     25, 26        6, 40)
 
     };
     
