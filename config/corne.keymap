@@ -28,7 +28,6 @@
     tapping-termt-ms = <150>;
     retro-tap;
 };
-// ~ > ¬   # > £   | > ~  ==a~~ |||~
 
 
 / {
@@ -62,19 +61,64 @@
     };
     combos {
         compatible = "zmk,combos";
+        combo_esc{
+            timeout-ms = <40>;
+            key-positions = <14 15>;
+            bindings = <&kp ESC>;
+            layers = <0>;
+        };
+        combo_tab{
+            timeout-ms = <40>;
+            key-positions = <15 16>;
+            bindings = <&kp TAB>;
+            layers = <0>;
+        };
+        combo_sqt{
+            timeout-ms = <40>;
+            key-positions = <19 20>;
+            bindings = <&kp SQT>;
+            layers = <0>;
+        };
+        combo_dqt{
+            timeout-ms = <40>;
+            key-positions = <20 21>;
+            bindings = <&kp AT>;
+            layers = <0>;
+        };
+        combo_grave{
+            timeout-ms = <40>;
+            key-positions = <21 22>;
+            bindings = <&kp PIPE>;
+            layers = <0>;
+        };
 
-COMBO(esc,     &kp ESC,     14  15,       0, 40)
-COMBO(tab,     &kp TAB,     15  16,       0, 40)
-COMBO(quote,   &kp SQT,     19  20,       0, 40)
-COMBO(dquote,  &kp AT,      20  21,       0, 40)
-COMBO(grave,   &kp PIPE,    21, 22        0, 40)
 
-COMBO(sym,     &to 1,       16, 19        0, 40)
-COMBO(sym,     &to 5,       29, 30        0, 40)
-COMBO(sym,     &to 2,       38, 39        0, 40)
+        combo_sym{
+            timeout-ms = <40>;
+            key-positions = <16 19>;
+            bindings = <&to 1>;
+            layers = <0>;
+        };
+        combo_num{
+            timeout-ms = <40>;
+            key-positions = <38 39>;
+            bindings = <&to 2>;
+            layers = <0>;
+        };
+        combo_func{
+            timeout-ms = <40>;
+            key-positions = <29 30>;
+            bindings = <&to 5>;
+            layers = <0>;
+        };
 
-COMBO(gameEsc, &kp ESC,     25, 26        6, 40)
 
+        combo_game_esc{
+            timeout-ms = <40>;
+            key-positions = <25 26>;
+            bindings = <&to ESC>;
+            layers = <6>;
+        };
     };
     
     keymap {
