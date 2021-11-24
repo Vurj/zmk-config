@@ -38,7 +38,7 @@
 
         nav_layer {
                         bindings = <
-   &trans &to 6   &trans   &trans    &trans    &trans    &trans   &kp PG_DN &kp UP   &kp PG_UP &trans  &trans
+   &trans &trans   &trans   &trans    &trans    &trans    &trans   &kp PG_DN &kp UP   &kp PG_UP &trans  &trans
    &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans    &kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END &trans
    &trans &trans   &trans   &trans    &trans    &trans    &trans   &trans    &trans   &trans    &trans  &trans
                              &kp ESC &kp TAB &kp SPACE    &kp RET &trans &to 5 
@@ -66,14 +66,6 @@
    &trans  &kp LSHFT &kp A &kp S &kp D &kp F       &trans &trans &trans &trans &trans &trans
    &trans  &kp LCTRL &kp Z &kp X &kp C &kp V       &trans &trans &trans &trans &trans &trans
                   &kp ESC &kp LALT &kp SPACE       &trans &trans &to 0
-                        >;
-                };
-        nick_layer {
-                        bindings = <
-&trans &to 0  &trans   &kp UP    &trans   &trans        &trans    &kp SPACE &kp Q   &trans    &trans    &trans
-&trans &kp RCTRL &kp LEFT &kp DOWN &kp RIGHT &trans        &kp ENTER &kp E     &kp A   &kp W    &kp D     &trans 
-&trans &trans &kp X    &kp C    &trans    &kp V         &trans    &kp Q     &trans  &trans   &trans    &trans
-                   &trans &trans  &kp UP     &kp S  &kp T   &to 0 
                         >;
                 };
         };
