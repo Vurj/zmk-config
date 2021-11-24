@@ -24,7 +24,7 @@
    &none  &kp Q      &kp W      &kp F       &kp P       &kp B     &kp J &kp L       &kp U       &kp Y      &kp SEMI   &none 
    &none  &mt LGUI A &mt LALT R &mt LCTRL S &mt LSHFT T &kp G     &kp M &mt RSHFT N &mt RCTRL E &mt RALT I &mt RGUI O &none 
    &none  &kp Z      &kp X      &kp C       &kp D       &kp V     &kp K &kp H       &kp COMMA   &kp DOT    &kp FSLH   &none 
-                               &lt 4 ESC &lt 3 TAB &lt 1 SPACE     &kp BSPC  &lt 2 RET &kp SQT
+                               &lt 4 ESC &sk LSHFT &lt 1 SPACE     &kp BSPC  &lt 2 RET &kp SQT
                         >;
                 };
         sym_layer {
