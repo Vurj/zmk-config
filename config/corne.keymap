@@ -21,6 +21,7 @@
 
 
 / {
+    /*
     combos {
         compatible = "zmk,combos";
         combo_esc{
@@ -81,7 +82,7 @@
             bindings = <&to ESC>;
             layers = <6>;
         };
-    };
+    };*/
 
     behaviors {
         am: alpha_mods{
