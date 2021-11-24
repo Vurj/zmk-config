@@ -71,7 +71,7 @@
         combo_grave{
             timeout-ms = <40>;
             key-positions = <21 22>;
-            bindings = <&kp PIPE>;
+            bindings = <&kp GRAVE>;
             layers = <0>;
         };
 
@@ -110,7 +110,7 @@
    &none  &kp Q      &kp W      &kp F       &kp P     &kp B            &kp J &kp L &kp U       &kp Y        &kp SEMI             &none 
    &none  &mt LGUI A &mt LALT R &mt LCTRL S &ttab     &kp G            &kp M &kp N &mt RCTRL E &mt RALT I   &mt RGUI O           &none 
    &none  &kp Z      &kp X      &kp C       &kp D     &kp V            &kp K &kp H &kp COMMA   &ht DOT EXCL &ht FSLH NON_US_BSLH &none 
-                                &none       &sk LSHFT &kp SPACE        &kp BSPC    &lt 2 RET   &none
+                                &none       &sk LSHFT &kp SPACE        &kp BSPC    &lt 3 RET   &none
                         >;
                 };
         sym_layer {
@@ -118,7 +118,7 @@
    &none  &kp KP_NUM      &kp TILDE2 &kp LBKT &kp RBKT &none        &none     &kp LS(N3) &kp DLLR &kp CARET &none     &none
    &none  &kp NON_US_HASH &kp UNDER  &kp LPAR &kp RPAR &kp DQT      &kp PRCNT &kp EQUAL  &kp PLUS &kp MINUS &kp STAR  &none
    &none  &none           &none      &kp LBRC &kp RBRC &none        &none     &kp PIPE2  &kp AMPS &kp PRCNT &kp CARET &none
-                                     &none    &to 0    &none        &kp BSPC  &kp CAPS   &none
+                                     &none    &none    &to 0        &kp BSPC  &kp CAPS   &none
                         >;
                 };
         num_layer {
@@ -126,7 +126,7 @@
    &none  &none    &none     &none     &none     &none              &kp EQUAL  &kp N7    &kp N8   &kp N9  &kp DOT    &none
    &none  &kp LGUI &kp LALT  &kp LCTRL &kp LSHFT &none              &kp PLUS   &kp N4    &kp N5   &kp N6  &kp STAR   &none
    &none  &none    &none     &none     &none     &none              &kp MINUS  &kp N1    &kp N2   &kp N3  &kp PRCNT  &none
-                             &none     &to 0     &kp SPACE          &kp N0   &kp SLASH   &none
+                             &none     &none     &to 0              &kp N0   &kp SLASH   &none
                         >;
                 };
         nav_layer {
@@ -150,7 +150,7 @@
    &none &none        &none        &none        &none        &none          &none &kp F7 &kp F8 &kp F9 &kp F10 &none
    &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR     &none &kp F4 &kp F5 &kp F6 &kp F11 &none
    &none &bt BT_SEL 4 &none        &none        &none        &none          &none &kp F1 &kp F2 &kp F3 &kp F12 &none
-                                   &none        &to 0        &none          &none &none  &none
+                                   &none        &none        &to 0          &none &none  &none
                         >;
                 };
         gaming_layer {
