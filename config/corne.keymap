@@ -93,6 +93,12 @@
             bindings = <&to 5>;
             layers = <0>;
         };
+        combo_steno{
+            timeout-ms = <30>;
+            key-positions = <1 10>;
+            bindings = <&to 7>;
+            layers = <0>;
+        };
 
         combo_game_esc{
             timeout-ms = <30>;
@@ -159,6 +165,14 @@
    &none  &kp LSHFT &kp A &kp S &kp D &kp F       &none &none &none &none &none &none
    &none  &kp LCTRL &kp Z &kp X &kp C &kp V       &none &none &none &none &none &none
                  &kp ESC &kp LALT &kp SPACE       &to 0 &none &none
+                        >;
+                };
+         steno_layer {
+                        bindings = <
+   &none  &kp NON_US_HASH &kp T &kp P &kp H &kp STAR       &kp F &kp P &kp L &kp T &kp D &none
+   &none  &kp S           &kp K &kp W &kp R &kp STAR       &kp R &kp B &kp G &kp S &kp Z &none
+   &none  &none           &none &none &to 1 &to 0          &none &to 2 &none &none &none &none
+                                &none &kp A &kp O          &kp E &kp U &none
                         >;
                 };
         };
