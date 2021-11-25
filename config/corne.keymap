@@ -169,10 +169,10 @@
                 };
          steno_layer {
                         bindings = <
-   &none  &kp NON_US_HASH &kp T &kp P &kp H &kp STAR       &kp F &kp P &kp L &kp T &kp D &none
-   &none  &kp S           &kp K &kp W &kp R &kp STAR       &kp R &kp B &kp G &kp S &kp Z &none
-   &none  &none           &none &none &to 1 &to 0          &none &to 2 &none &none &none &none
-                                &none &kp A &kp O          &kp E &kp U &none
+   &none  &none  &kp W &kp E &kp R &kp T          &kp U &kp I &kp O &kp P &kp Z &none
+   &none  &kp Q  &kp S &kp D &kp F &kp G          &kp J &kp K &kp L &kp H &kp X &none
+   &none  &none  &none &none &to 1 &to 0          &none &to 2 &none &none &none &none
+                       &none &kp C &kp V          &kp N &kp M &none
                         >;
                 };
         };
