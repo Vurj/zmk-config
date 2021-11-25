@@ -110,7 +110,7 @@
    &none  &kp Q      &kp W      &kp F       &kp P     &kp B            &kp J &kp L &kp U       &kp Y        &kp SEMI             &none 
    &none  &mt LGUI A &mt LALT R &mt LCTRL S &ttab     &kp G            &kp M &kp N &mt RCTRL E &mt RALT I   &mt RGUI O           &none 
    &none  &kp Z      &kp X      &kp C       &kp D     &kp V            &kp K &kp H &kp COMMA   &ht EXCL DOT &ht NON_US_BSLH FSLH &none 
-                                &none       &sk LSHFT &kp SPACE        &kp BSPC    &lt 3 RET   &none
+                                &none       &kp LSHFT &kp SPACE        &kp BSPC    &lt 3 RET   &none
                         >;
                 };
         sym_layer {
