@@ -48,31 +48,31 @@
             timeout-ms = <30>;
             key-positions = <14 15>;
             bindings = <&kp ESC>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
         combo_tab{
             timeout-ms = <30>;
             key-positions = <15 16>;
             bindings = <&kp TAB>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
         combo_sqt{
             timeout-ms = <30>;
             key-positions = <19 20>;
-            bindings = <&kp SQT>;
-            layers = <0>;
+            bindings = <&ht SQT AT>;
+            layers = <0 1 2>;
         };
         combo_dqt{
             timeout-ms = <30>;
             key-positions = <20 21>;
-            bindings = <&kp AT>;
-            layers = <0>;
+            bindings = <&kp GRAVE DQT>;
+            layers = <0 1 2>;
         };
         combo_grave{
             timeout-ms = <30>;
             key-positions = <21 22>;
             bindings = <&kp GRAVE>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         combo_sym{
@@ -102,8 +102,8 @@
 
         combo_game_esc{
             timeout-ms = <30>;
-            key-positions = <25 26>;
-            bindings = <&to ESC>;
+            key-positions = <26 27>;
+            bindings = <&kp ESC>;
             layers = <6>;
         };
     };
@@ -121,9 +121,9 @@
                 };
         sym_layer {
                         bindings = <
-   &none  &kp KP_NUM      &kp TILDE2 &kp LBKT &kp RBKT &none        &none     &kp LS(N3)   &kp DLLR &kp CARET &none     &none
-   &none  &kp NON_US_HASH &kp UNDER  &kp LPAR &kp RPAR &kp DQT      &kp PRCNT &kp KP_EQUAL &kp PLUS &kp MINUS &kp STAR  &none
-   &none  &none           &none      &kp LBRC &kp RBRC &none        &none     &kp PIPE2    &kp AMPS &kp PRCNT &kp CARET &none
+   &none  &kp KP_NUM      &kp TILDE2 &kp LBKT &kp RBKT &none        &none     &kp LS(N3)   &kp DLLR    &kp CARET &none     &none
+   &none  &kp NON_US_HASH &kp UNDER  &kp LPAR &kp RPAR &kp DQT      &kp PRCNT &kp EQUAL    &kp KP_PLUS &kp MINUS &kp STAR  &none
+   &none  &none           &none      &kp LBRC &kp RBRC &none        &none     &kp PIPE2    &kp AMPS    &kp PRCNT &kp CARET &none
                                      &none    &none    &to 0        &kp BSPC  &kp CAPS     &none
                         >;
                 };
