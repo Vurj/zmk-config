@@ -65,7 +65,7 @@
         combo_dqt{
             timeout-ms = <30>;
             key-positions = <20 21>;
-            bindings = <&kp GRAVE DQT>;
+            bindings = <&ht GRAVE DQT>;
             layers = <0 1 2>;
         };
         combo_grave{
