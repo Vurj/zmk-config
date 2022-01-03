@@ -178,7 +178,7 @@
                         bindings = <
    &none &none    &none    &none     &none     &none                &none    &kp PG_DN &kp UP   &kp PG_UP &none        &none
    &none &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none                &kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END      &none
-   &none &none    &none    &none     &none     &none                &none    &kp LGUI(LS(LEFT)) &none     &kp LGUI(LS(RIGHT)) &kp LA(F4) &none
+   &none &none    &none    &none     &none     &none                &none    &kp LG(LS(LEFT)) &none     &kp LG(LS(RIGHT)) &kp LA(F4) &none
                            &none     &kp LSHFT &kp SPACE            &to 5    &none     &none 
                         >;
                 };
