@@ -72,7 +72,7 @@
         };
         combo_dqt_at{
             timeout-ms = <30>;
-            key-positions = <19 20>;
+            key-positions = <20 21>;
             bindings = <&ht DQT AT>;
             layers = <0>;
         };
