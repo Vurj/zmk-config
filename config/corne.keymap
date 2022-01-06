@@ -187,7 +187,7 @@
             bindings = <
    &none  &none      &kp W      &kp F       &kp P     &none            &none &kp L &kp U       &kp Y        &none       &none 
    &none  &mt LGUI A &mt LALT R &mt LCTRL S &ttab     &kp G            &kp M &kp N &mt RCTRL E &mt RALT I   &mt RGUI O  &none 
-   &none  &kp Z      &kp X      &kp C       &kp D     &kp V            &kp K &kp H &kp Q       &kp B        &kp J       &none 
+   &none  &kp Z      &kp X      &kp C       &kp D     &kp V            &kp K &kp H &kp B       &kp Q        &kp J       &none 
                                 &none       &kp LSHFT &lt 1 SPACE      &kp BSPC    &lt 2 RET   &none
                         >;
                 };
