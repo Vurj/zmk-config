@@ -193,7 +193,7 @@
    &none  &none      &kp W      &kp F       &kp P     &none            &none &kp L &kp U       &kp Y        &none       &none 
    &none  &mt LGUI A &mt LALT R &mt LCTRL S &ttab     &kp G            &kp M &kp N &mt RCTRL E &mt RALT I   &mt RGUI O  &none 
    &none  &lt 4 Z    &kp X      &kp C       &kp D     &kp V            &kp K &kp H &kp B       &kp Q        &kp J       &none 
-                                &none       &none     &mt LSHFT SPACE  &lt 2 LC(BSPC)     &none   &none
+                                &none       &none     &mt LSHFT SPACE  &lt 2 BSPC     &none   &none
                         >;
                 };
         num_layer {
