@@ -16,7 +16,7 @@
 
 / {
     behaviors {
-         ht: hold_tap{
+        ht: hold_tap{
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP";
             #binding-cells = <2>;
@@ -29,7 +29,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "T_TAB";
             #binding-cells = <0>;
-            bindings = <&kp T>, <&kp TAB>;
+            bindings = <&lt 1 T>, <&kp TAB>;
             mods = <MOD_LALT>;                
         };
     };
@@ -45,44 +45,59 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_tab{
-            timeout-ms = <30>;
-            key-positions = <15 16>;
-            bindings = <&kp TAB>;
-            layers = <0>;
-        };
-        combo_esc{
-            timeout-ms = <30>;
-            key-positions = <14 15>;
-            bindings = <&kp ESC>;
-            layers = <0>;
-        };
-        combo_and_pipe{
-            timeout-ms = <30>;
-            key-positions = <3 16>;
-            bindings = <&ht PIPE2 AMPS>;
-            layers = <0>;
-        };
-
+        //Punctuation
         combo_sqt_grave{
             timeout-ms = <30>;
-            key-positions = <19 20>;
+            key-positions = <15 16>;
             bindings = <&ht GRAVE SQT>;
             layers = <0>;
         };
         combo_dqt_at{
             timeout-ms = <30>;
-            key-positions = <20 21>;
+            key-positions = <14 15>;
             bindings = <&ht DQT AT>;
             layers = <0>;
         };
-        combo_money{
+        combo_colons{
             timeout-ms = <30>;
-            key-positions = <19 8>;
-            bindings = <&ht LS(N3) DLLR>;
+            key-positions = <14 16>;
+            bindings = <&ht LS(SEMI) SEMI>;
+            layers = <0>;
+        }; 
+        combo_comma_hash{
+            timeout-ms = <30>;
+            key-positions = <27 28>;
+            bindings = <&ht NON_US_HASH COMMA>;
+            layers = <0>;
+        };
+        combo_period_exca{
+            timeout-ms = <30>;
+            key-positions = <31 32>;
+            bindings = <&ht EXCL DOT>;
             layers = <0>;
         };
 
+        //functions
+        combo_tab{
+            timeout-ms = <30>;
+            key-positions = <19 20>;
+            bindings = <&kp TAB>;
+            layers = <0>;
+        };
+        combo_esc{
+            timeout-ms = <30>;
+            key-positions = <20 21>;
+            bindings = <&kp ESC>;
+            layers = <0>;
+        };
+        combo_enter{
+            timeout-ms = <30>;
+            key-positions = <19 21>;
+            bindings = <&kp ENTER>;
+            layers = <0>;
+        };
+
+        //Brackets
         combo_paren{
             timeout-ms = <30>;
             key-positions = <3 4>;
@@ -101,7 +116,8 @@
             bindings = <&ht RBKT LBKT>;
             layers = <0>;
         };
-
+    
+        //Math
         combo_equals_under{
             timeout-ms = <30>;
             key-positions = <7 8>;
@@ -121,48 +137,38 @@
             layers = <0>;
         };
 
-        combo_period_exca{
+        //Symbols
+        combo_and_pipe{
             timeout-ms = <30>;
-            key-positions = <16 19>;
-            bindings = <&ht EXCL DOT>;
+            key-positions = <3 16>;
+            bindings = <&ht PIPE2 AMPS>;
             layers = <0>;
         };
-        combo_comma{
+        combo_money{
             timeout-ms = <30>;
-            key-positions = <15 20>;
-            bindings = <&kp COMMA>;
+            key-positions = <19 8>;
+            bindings = <&ht LS(N3) DLLR>;
             layers = <0>;
         };
         combo_slashes{
             timeout-ms = <30>;
-            key-positions = <4 7>;
+            key-positions = <31 33>;
             bindings = <&ht NON_US_BSLH FSLH>;
-            layers = <0>;
-        };
-        combo_colons{
-            timeout-ms = <30>;
-            key-positions = <3 8>;
-            bindings = <&ht LS(SEMI) SEMI>;
-            layers = <0>;
-        };
-
-        combo_hash{
-            timeout-ms = <30>;
-            key-positions = <28 31>;
-            bindings = <&kp NON_US_HASH>;
             layers = <0>;
         };
         combo_tilde_caret{
             timeout-ms = <30>;
-            key-positions = <4 7>;
+            key-positions = <26 28>;
             bindings = <&ht CARET TILDE2>;
             layers = <0>;
         };
 
-        combo_func{
+
+        //Layers
+        combo_gaming{
             timeout-ms = <30>;
-            key-positions = <29 30>;
-            bindings = <&to 4>;
+            key-positions = <17 18>;
+            bindings = <&to 5>;
             layers = <0>;
         };
         combo_steno{
@@ -171,7 +177,6 @@
             bindings = <&to 6>;
             layers = <0>;
         };
-
         combo_game_esc{
             timeout-ms = <30>;
             key-positions = <26 27>;
@@ -187,16 +192,16 @@
             bindings = <
    &none  &none      &kp W      &kp F       &kp P     &none            &none &kp L &kp U       &kp Y        &none       &none 
    &none  &mt LGUI A &mt LALT R &mt LCTRL S &ttab     &kp G            &kp M &kp N &mt RCTRL E &mt RALT I   &mt RGUI O  &none 
-   &none  &kp Z      &kp X      &kp C       &kp D     &kp V            &kp K &kp H &kp B       &kp Q        &kp J       &none 
-                                &none       &kp LSHFT &lt 1 SPACE      &kp BSPC    &lt 2 RET   &none
+   &none  &lt 4 Z    &kp X      &kp C       &kp D     &kp V            &kp K &kp H &kp B       &kp Q        &kp J       &none 
+                                &none       &none     &mt LSHFT SPACE  &lt 2 LC(BSPC)     &none   &none
                         >;
                 };
         num_layer {
                         bindings = <
    &none  &none    &none     &none     &none     &none              &none           &kp N7    &kp N8   &kp N9  &none          &none
-   &none  &kp LGUI &kp LALT  &kp LCTRL &kp LSHFT &none              &kp N0          &kp N4    &kp N5   &kp N6  &kp DOT        &none
+   &none  &kp LGUI &kp LALT  &kp LCTRL &kp LSHFT &none              &ht DOT EQUAL   &kp N4    &kp N5   &kp N6  &kp N0        &none
    &none  &none    &none     &none     &none     &none              &ht MINUS PLUS  &kp N1    &kp N2   &kp N3  &ht PRCNT STAR &none
-                             &none     &none     &none              &kp BSPC        &kp EQUAL    &none
+                             &none     &none     &none              &ht DEL BSPC    &none    &none
                         >;
                 };
         nav_layer {
@@ -204,7 +209,7 @@
    &none &none    &none    &none     &none     &none                &none    &kp PG_DN &kp UP   &kp PG_UP &none        &none
    &none &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none                &kp HOME &kp LEFT  &kp DOWN &kp RIGHT &kp END      &none
    &none &none    &none    &none     &none     &none                &none    &kp LG(LS(LEFT)) &none     &kp LG(LS(RIGHT)) &kp LA(F4) &none
-                           &none     &kp LSHFT &kp SPACE            &to 5    &none     &none 
+                           &none     &none &mt LSHFT SPACE          &none    &none     &none 
                         >;
                 };
         mouse_layer {
@@ -220,7 +225,7 @@
    &none &none        &none        &none        &none        &none          &none   &kp F7 &kp F8 &kp F9   &none     &none
    &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR     &kp F10 &kp F4 &kp F5 &kp F6   &kp F11   &none
    &none &bt BT_SEL 4 &none        &none        &none        &none          &none   &kp F1 &kp F2 &kp F3   &kp F12   &none
-                                   &none        &none        &to 0          &none &none  &none
+                                   &none        &none        &none          &none &none  &none
                         >;
                 };
         gaming_layer {
