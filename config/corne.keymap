@@ -47,31 +47,31 @@
 
         //Punctuation
         combo_sqt_grave{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <15 16>;
             bindings = <&ht GRAVE SQT>;
             layers = <0>;
         };
         combo_dqt_at{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <14 15>;
             bindings = <&ht DQT AT>;
             layers = <0>;
         };
         combo_colons{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <14 16>;
             bindings = <&ht LS(SEMI) SEMI>;
             layers = <0>;
         }; 
         combo_comma_hash{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <27 28>;
             bindings = <&ht NON_US_HASH COMMA>;
             layers = <0>;
         };
         combo_period_exca{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <31 32>;
             bindings = <&ht EXCL DOT>;
             layers = <0>;
@@ -79,19 +79,19 @@
 
         //functions
         combo_tab{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <19 20>;
             bindings = <&kp TAB>;
             layers = <0>;
         };
         combo_esc{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <20 21>;
             bindings = <&kp ESC>;
             layers = <0>;
         };
         combo_enter{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <19 21>;
             bindings = <&kp ENTER>;
             layers = <0>;
@@ -99,19 +99,19 @@
 
         //Brackets
         combo_paren{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <3 4>;
             bindings = <&ht RPAR LPAR>;
             layers = <0>;
         };
         combo_brace{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <2 3>;
             bindings = <&ht RBRC LBRC>;
             layers = <0>;
         };
         combo_brack{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <2 4>;
             bindings = <&ht RBKT LBKT>;
             layers = <0>;
@@ -119,19 +119,19 @@
     
         //Math
         combo_equals_under{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <7 8>;
             bindings = <&ht UNDER EQUAL>;
             layers = <0>;
         };
         combo_plus_min{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <8 9>;
             bindings = <&ht MINUS KP_PLUS>;
             layers = <0>;
         };
         combo_times_div{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <7 9>;
             bindings = <&ht PRCNT STAR>;
             layers = <0>;
@@ -139,25 +139,25 @@
 
         //Symbols
         combo_and_pipe{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <3 16>;
             bindings = <&ht PIPE2 AMPS>;
             layers = <0>;
         };
         combo_money{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <19 8>;
             bindings = <&ht LS(N3) DLLR>;
             layers = <0>;
         };
         combo_slashes{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <31 33>;
             bindings = <&ht NON_US_BSLH FSLH>;
             layers = <0>;
         };
         combo_tilde_caret{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <26 28>;
             bindings = <&ht CARET TILDE2>;
             layers = <0>;
@@ -166,19 +166,19 @@
 
         //Layers
         combo_gaming{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <17 18>;
             bindings = <&to 5>;
             layers = <0>;
         };
         combo_steno{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <1 10>;
             bindings = <&to 6>;
             layers = <0>;
         };
         combo_game_esc{
-            timeout-ms = <30>;
+            timeout-ms = <20>;
             key-positions = <26 27>;
             bindings = <&kp ESC>;
             layers = <5>;
