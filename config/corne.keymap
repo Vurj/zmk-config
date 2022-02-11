@@ -48,19 +48,19 @@
         //Punctuation
         combo_sqt_grave{
             timeout-ms = <20>;
-            key-positions = <15 16>;
+            key-positions = <19 20>;
             bindings = <&ht GRAVE SQT>;
             layers = <0>;
         };
         combo_dqt_at{
             timeout-ms = <20>;
-            key-positions = <14 15>;
+            key-positions = <20 21>;
             bindings = <&ht DQT AT>;
             layers = <0>;
         };
         combo_colons{
             timeout-ms = <20>;
-            key-positions = <14 16>;
+            key-positions = <19 21>;
             bindings = <&ht LS(SEMI) SEMI>;
             layers = <0>;
         }; 
@@ -80,22 +80,22 @@
         //functions
         combo_tab{
             timeout-ms = <20>;
-            key-positions = <19 20>;
+            key-positions = <15 16>;
             bindings = <&kp TAB>;
             layers = <0>;
         };
         combo_esc{
             timeout-ms = <20>;
-            key-positions = <20 21>;
+            key-positions = <14 15>;
             bindings = <&kp ESC>;
             layers = <0>;
         };
-        combo_enter{
+        /*combo_enter{
             timeout-ms = <20>;
             key-positions = <19 21>;
             bindings = <&kp ENTER>;
             layers = <0>;
-        };
+        };*/
 
         //Brackets
         combo_paren{
@@ -193,13 +193,13 @@
    &none  &none      &kp W      &kp F       &kp P     &none            &none &kp L &kp U       &kp Y        &none       &none 
    &none  &mt LGUI A &mt LALT R &mt LCTRL S &ttab     &kp G            &kp M &kp N &mt RCTRL E &mt RALT I   &mt RGUI O  &none 
    &none  &lt 4 Z    &kp X      &kp C       &kp D     &kp V            &kp K &kp H &kp B       &kp Q        &kp J       &none 
-                                &none       &none     &mt LSHFT SPACE  &lt 2 BSPC     &none   &none
+                                &none       &kp LSHFT &kp SPACE        &kp BSPC  &lt 2 ENTER   &none
                         >;
                 };
         num_layer {
                         bindings = <
    &none  &none    &none     &none     &none     &none              &none           &kp N7    &kp N8   &kp N9  &none          &none
-   &none  &kp LGUI &kp LALT  &kp LCTRL &kp LSHFT &none              &ht DOT EQUAL   &kp N4    &kp N5   &kp N6  &kp N0        &none
+   &none  &kp LGUI &kp LALT  &kp LCTRL &kp LSHFT &none              &ht EQUAL DOT   &kp N4    &kp N5   &kp N6  &kp N0        &none
    &none  &none    &none     &none     &none     &none              &ht MINUS PLUS  &kp N1    &kp N2   &kp N3  &ht PRCNT STAR &none
                              &none     &none     &none              &ht DEL BSPC    &none    &none
                         >;
