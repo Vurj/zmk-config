@@ -1,17 +1,17 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_VURJ_LEFT
+if SHIELD_BERYLLINE_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Vurj"
+	default "Berylline"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_VURJ_LEFT || SHIELD_VURJ_RIGHT
+if SHIELD_BERYLLINE_LEFT || SHIELD_BERYLLINE_RIGHT
 
 config ZMK_SPLIT
 	default y
