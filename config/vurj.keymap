@@ -25,8 +25,6 @@
 
 / {
     behaviors {
-
-        // Vurj Behaviors
         ht: hold_tap{
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP";
@@ -43,7 +41,6 @@
             bindings = <&lt 1 T>, <&kp TAB>;
             mods = <MOD_LALT>;                
         };
-        
     };
 
     combos {
@@ -104,11 +101,11 @@
         default_layer {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp W         &kp F         &kp M         &kp P         &kp G             &kp K         &kp U         &kp O         &kp Y         &kp QUOT
-             &kp R         &kp S         &bt BT_SEL O  &bt BT_CLR    &kp B             &kp J         &kp A         &kp E         &kp I         &kp H
-                           &kp C         &kp L         &kp D                                         &kp X         &kp COMMA     &kp DOT
+             &mt LGUI      &kp W         &kp F         &kp P         &kp G             &kp M         &kp L         &kp U         &kp Y         &mt RGUI O
+             &lt 3 Z       &mt LALT R    &mt LCTRL S   &ttab         &kp V             &kp K         &kp N         &mt RCTRL E   &mt RALT I    &kp J
+                           &kp X         &kp C         &kp D                                         &kp H         &kp B         &kp Q
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp T     &kp SPACE         &kp T     &kp T
+                                                       &kp LSHFT     &kp SPACE         &kp BSPC      &lt 2 ENTER
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
                
             >;
