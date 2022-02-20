@@ -17,12 +17,10 @@
 #define NUM_L 4
 
 /* Behavior Settings */
-&caps_word {
-  continue-list = <UNDERSCORE MINUS BACKSPACE>;
-};
-
-&sk {
-  release-after-ms = <60000>;
+&mt {
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+    quick_tap_ms = <150>;
 };
 
 / {
