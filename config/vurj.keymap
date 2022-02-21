@@ -119,14 +119,14 @@
             >;
         };
 
-        upper_layer {
+        btf_layer {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp LS(W)     &kp LS(F)     &kp LS(M)     &kp LS(P)     &kp LS(G)         &kp LS(K)     &kp LS(U)     &kp LS(O)     &kp LS(Y)     &kp DQT
-             &kp LS(R)     &kp LS(S)     &kp LS(N)     &kp LS(T)     &kp LS(B)         &kp LS(J)     &kp LS(A)     &kp LS(E)     &kp LS(I)     &kp LS(H)
-                           &kp LS(C)     &kp LS(L)     &kp LS(D)                                     &kp LS(X)     &kp L         &kp T
+             &bt BT_SEL 3  &none         &none         &none         &none             &none         &kp F7        &kp F8        &kp F9        &none
+             &none         &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL O  &bt BT_CLR        &kp F10       &kp F4        &kp F5        &kp F6        &none
+                           &none         &none         &bt BT_SEL 4                                  &kp F1        &kp F2        &kp F3
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &trans        &kp LS(SPACE)     &trans        &trans
+                                                       &none          &none           &none         &none
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
