@@ -91,6 +91,8 @@
         COMBO(game_tab, &kp TAB, 14 4, 4)
     };
 
+//make N hold be mouse layer
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -110,7 +112,7 @@
         num_layer {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp LGUI      &none         &none         &none         &none             &ht EQUAL DOT  &kp N7       &kp N8        &kp N9        &kp NO
+             &kp LGUI      &none         &none         &none         &none             &ht EQUAL DOT  &kp N7       &kp N8        &kp N9        &kp N0
              &none         &kp LALT      &kp LCTRL     &none         &none             &ht MINUS PLUS &kp N4       &kp N5        &kp N6        &ht PRCNT STAR
                            &none         &none         &none                                          &kp N1       &kp N2        &kp N3
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
