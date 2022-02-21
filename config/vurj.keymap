@@ -111,7 +111,7 @@
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &kp LGUI      &none         &none         &none         &none             &ht EQUAL DOT  &kp N7       &kp N8        &kp N9        &kp NO
-             &none         &kp LALT      &kp LCTRL     &none         &none             &ht MINUS PLUS &kp N4       &kp N5        &kp N6        &mt PRCNT STAR
+             &none         &kp LALT      &kp LCTRL     &none         &none             &ht MINUS PLUS &kp N4       &kp N5        &kp N6        &ht PRCNT STAR
                            &none         &none         &none                                          &kp N1       &kp N2        &kp N3
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &trans            &kp BSPC       &kp DEL
