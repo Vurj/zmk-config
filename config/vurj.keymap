@@ -126,7 +126,7 @@
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &kp LGUI      &none         &none         &none         &none             &none         &kp PG_DN        &kp UP     &kp PG_UP     &kp END
              &none         &kp LALT      &kp LCTRL     &none         &none             &kp HOME      &kp LEFT         &kp DOWN   &kp RIGHT     &kp LA(F4)
-                           &none         &none         &none                                         &kp LG(LS(LEFT)) &kp K_PP   &kp LG(LS(RIGHT))
+                           &none         &none         &none                                         &kp LG(LS(LEFT)) &kp C_PP   &kp LG(LS(RIGHT))
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &trans            &none         &none
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
