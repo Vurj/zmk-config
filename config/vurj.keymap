@@ -101,7 +101,7 @@
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &mt LGUI A    &kp W         &kp F         &kp P         &kp G             &kp M         &kp L         &kp U         &kp Y         &mt RGUI O
              &lt 3 Z       &mt LALT R    &mt LCTRL S   &ttab         &kp V             &kp K         &kp N         &mt RCTRL E   &mt RALT I    &kp J
-                           &kp C         &kp L         &kp D                                         &kp H         &kp B         &kp Q
+                           &kp X         &kp C         &kp D                                         &kp H         &kp B         &kp Q
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp LSHFT     &kp SPACE         &kp BSPC      &lt 2 ENTER
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
