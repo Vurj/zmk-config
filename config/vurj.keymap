@@ -87,7 +87,7 @@
 
         /* Gaming */
         COMBO(gaming, &to 4, 28 29, 0)
-        COMBO(game_esc, &kp ESC, 10 20, 4)
+        COMBO(game_esc, &kp ESC, 20 21, 4)
         COMBO(game_tab, &kp TAB, 14 4, 4)
     };
 
@@ -152,7 +152,7 @@
              &kp LCTRL     &kp A         &kp S         &kp D         &kp F              &kp F10       &kp F4        &kp F5       &kp F6       &none
                            &kp Z         &kp X         &kp C                                          &kp F1        &kp F2       &kp F3
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp LALT      &kp SPACE          &none        &none
+                                                       &kp LALT      &kp SPACE          &to 0        &none
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
