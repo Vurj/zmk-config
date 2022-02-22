@@ -34,7 +34,7 @@
             label = "T_TAB";
             #binding-cells = <0>;
             bindings = <&lt 1 T>, <&kp TAB>;
-            mods = <MOD_LALT>;                
+            mods = <(MOD_LALT|MOD_LGUI)>;                
         };
         
     };
@@ -64,7 +64,7 @@
         
          /* Puncuation */
         COMBO(sqt_grave, &ht GRAVE SQT, 16 17, 0)
-        COMBO(dqt_at, &ht AT DQT, 17 18, 0)
+        COMBO(dqt_at, &ht DQT AT, 17 18, 0)
         COMBO(colons, &ht LS(SEMI) SEMI, 6 16, 0)
         COMBO(comma_hash, &ht NON_US_HASH COMMA, 21 22, 0)
         COMBO(period_exca, &ht EXCL DOT, 23 24, 0)
