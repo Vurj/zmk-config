@@ -86,7 +86,7 @@
         COMBO(tilde_caret, &ht CARET TILDE2, 13 22, 0)
 
         /* Gaming */
-        COMBO(gaming, &to 5, 28 29, 0)
+        COMBO(gaming, &to 4, 28 29, 0)
         COMBO(game_esc, &kp ESC, 10 20, 4)
         COMBO(game_tab, &kp TAB, 14 4, 4)
     };
