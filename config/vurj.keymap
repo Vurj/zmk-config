@@ -11,9 +11,9 @@
 
 /* Behavior Settings */
 &mt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <190>;
     flavor = "tap-preferred";
-    quick_tap_ms = <150>;
+    quick_tap_ms = <190>;
 };
 
 / {
@@ -47,6 +47,7 @@
             bindings = <BINDINGS>; \
             key-positions = <KEYPOS>; \
             layers = <LAYERS>; \
+            timeout-ms = <30>
           };
 
         /*                KEY POSITIONS
