@@ -100,7 +100,7 @@
         default_layer {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &mt LGUI A    &kp W         &kp F         &kp P         &kp G             &kp M         &kp L         &kp U         &kp Y         &mt RGUI O
+             &lt 5 A    &kp W         &kp F         &kp P         &kp G             &kp M         &kp L         &kp U         &kp Y         &mt RGUI O
              &lt 3 Z       &mt LALT R    &mt LCTRL S   &ttab         &kp V             &kp K         &kp N         &mt RCTRL E   &mt RALT I    &kp J
                            &kp X         &kp C         &kp D                                         &kp H         &kp B         &kp Q
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
