@@ -165,7 +165,7 @@
              &none         &kp LG(N)     &kp LG(E)     &kp LG(O)     &kp LG(V)          &kp LG(0)      &kp LG(N4)    &kp LG(N5)    &kp LG(N6)   &kp LG(A)
                            &none         &kp LG(X)     &kp LG(L)                                       &kp LG(N1)    &kp LG(N2)    &kp LG(N3)   &kp LG(B)
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp LSHIFT    &kp LG(SPACE)      &none         &LG(ENTER)
+                                                       &kp LSHIFT    &kp LG(SPACE)      &none         &kp LG(ENTER)
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
