@@ -163,7 +163,7 @@
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &none         &kp LG(Y)     &kp LG(F)     &kp LG(S)     &kp LG(M)          &kp LG(Z)      &kp LG(N7)    &kp LG(N8)    &kp LG(N9)   &kp LG(Y)
              &none         &kp LG(N)     &kp LG(E)     &kp LG(O)     &kp LG(V)          &kp LG(0)      &kp LG(N4)    &kp LG(N5)    &kp LG(N6)   &kp LG(A)
-                           &none         &kp LG(X)     &kp LG(L)                                       &kp LG(N1)    &kp LG(N2)    &kp LG(N3)   &kp LG(B)
+                           &none         &kp LG(X)     &kp LG(L)                                       &kp LG(N1)    &kp LG(N2)    &kp LG(N3)   
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp LSHIFT    &kp LG(SPACE)      &none         &kp LG(ENTER)
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
