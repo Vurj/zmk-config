@@ -161,11 +161,11 @@
         function2_layer {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &none         &kp LG(Y)     &kp LG(U)     &kp LG(S)     &kp LG(M)          &kp LG(Z)      &kp F19       &kp F20         &kp F21      &kp F22
-             &none         &kp LG(N)     &kp LG(E)     &kp LG(O)     &kp LG(V)          &kp F24        &kp F16       &kp F17         &kp F18      &kp F23
-                           &none         &kp LG(X)     &kp LG(L)                                       &kp F13       &kp F14         &kp F15
+             &none         &kp LG(Y)     &kp LG(F)     &kp LG(S)     &kp LG(M)          &kp LG(Z)      &kp LG(N7)    &kp LG(N8)    &kp LG(N9)   &kp LG(Y)
+             &none         &kp LG(N)     &kp LG(E)     &kp LG(O)     &kp LG(V)          &kp LG(0)      &kp LG(N4)    &kp LG(N5)    &kp LG(N6)   &kp LG(A)
+                           &none         &kp LG(X)     &kp LG(L)                                       &kp LG(N1)    &kp LG(N2)    &kp LG(N3)   &kp LG(B)
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp LSHIFT    &kp LG(SPACE)      &none         &none
+                                                       &kp LSHIFT    &kp LG(SPACE)      &none         &LG(ENTER)
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
