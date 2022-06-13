@@ -73,10 +73,10 @@
 
 
         /* Extra letters */
-        COMBO(Q, &kp Q, 1 2, 0)
-        COMBO(B, &kp B, 2 3, 0)
-        COMBO(J, &kp J, 6 7, 0)
-        COMBO(;, &kp SEMI, 7 8, 0)
+        COMBO(q, &kp Q, 1 2, 0)
+        COMBO(b, &kp B, 2 3, 0)
+        COMBO(j, &kp J, 6 7, 0)
+        COMBO(semi, &kp SEMI, 7 8, 0)
 
         /* Functions */
         COMBO(tab, &kp TAB, 12 13, 0)
