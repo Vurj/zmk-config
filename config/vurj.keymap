@@ -11,14 +11,13 @@
 
 /* Behavior Settings */
 &mt {
-    tapping-term-ms = <120>;
+    tapping-term-ms = <140>;
     flavor = "tap-preferred";
-    quick_tap_ms = <120>;
 };
 &lt {
     tapping-term-ms = <120>;
     flavor = "tap-preferred";
-    quick_tap_ms = <120>;
+    retro-tap;
 };
 
 / {
