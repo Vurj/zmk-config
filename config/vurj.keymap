@@ -11,9 +11,14 @@
 
 /* Behavior Settings */
 &mt {
-    tapping-term-ms = <190>;
+    tapping-term-ms = <120>;
     flavor = "tap-preferred";
-    quick_tap_ms = <190>;
+    quick_tap_ms = <120>;
+};
+&lt {
+    tapping-term-ms = <120>;
+    flavor = "tap-preferred";
+    quick_tap_ms = <120>;
 };
 
 / {
@@ -24,7 +29,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <100>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -35,6 +40,13 @@
             #binding-cells = <0>;
             bindings = <&lt 1 T>, <&kp TAB>;
             mods = <(MOD_LALT|MOD_LGUI)>;                
+        };
+        vspace: v_space {
+            compatible = "zmk,behavior-tap-dance";
+            label = "V_SPACE";
+            #binding-cells = <0>;
+            tapping-term-ms = <140>;
+            bindings = <&lt 3 SPACE>, <&kp SPACE>;
         };
         
     };
@@ -59,6 +71,13 @@
           ╰───────────╮ 26  27 │ │ 28  29 ╭───────────╯
                       ╰────────╯ ╰────────╯            */
 
+
+        /* Extra letters */
+        COMBO(Q, &kp Q, 1 2, 0)
+        COMBO(B, &kp B, 2 3, 0)
+        COMBO(J, &kp J, 6 7, 0)
+        COMBO(;, &kp SEMI, 7 8, 0)
+
         /* Functions */
         COMBO(tab, &kp TAB, 12 13, 0)
         COMBO(esc, &kp ESC, 11 12, 0)
@@ -66,30 +85,30 @@
          /* Puncuation */
         COMBO(sqt_grave, &ht GRAVE SQT, 16 17, 0)
         COMBO(dqt_at, &ht DQT AT, 17 18, 0)
-        COMBO(colons, &ht LS(SEMI) SEMI, 6 16, 0)
-        COMBO(comma_hash, &ht NON_US_HASH COMMA, 21 22, 0)
-        COMBO(period_exca, &ht EXCL DOT, 23 24, 0)
+        //COMBO(colons, &ht LS(SEMI) SEMI, 6 16, 0)
+        //COMBO(comma_hash, &ht NON_US_HASH COMMA, 21 22, 0)
+        //COMBO(period_exca, &ht EXCL DOT, 23 24, 0)
 
         /* Brackets */
-        COMBO(paren, &ht RPAR LPAR, 2 3, 0)
-        COMBO(brace, &ht RBRC LBRC, 1 2, 0)
-        COMBO(brack, &ht RBKT LBKT, 4 14, 0)
+        //COMBO(paren, &ht RPAR LPAR, 2 3, 0)
+        //COMBO(brace, &ht RBRC LBRC, 1 2, 0)
+        //COMBO(brack, &ht RBKT LBKT, 4 14, 0)
 
         /* Math */
-        COMBO(equals_under, &ht UNDER EQUAL, 6 7, 0)
-        COMBO(plus_min, &ht MINUS KP_PLUS, 7 8, 0)
-        COMBO(times_div, &ht PRCNT STAR, 5 15, 0)
+        //COMBO(equals_under, &ht UNDER EQUAL, 6 7, 0)
+        //COMBO(plus_min, &ht MINUS KP_PLUS, 7 8, 0)
+        //COMBO(times_div, &ht PRCNT STAR, 5 15, 0)
 
         /* Symbols */
-        COMBO(and_pipe, &ht PIPE2 AMPS, 2 13, 0)
-        COMBO(money, &ht LS(N3) DLLR, 16 7, 0)
-        COMBO(slashes, &ht NON_US_BSLH FSLH, 16 23, 0)
-        COMBO(tilde_caret, &ht CARET TILDE2, 13 22, 0)
+        //COMBO(and_pipe, &ht PIPE2 AMPS, 2 13, 0)
+        //COMBO(money, &ht LS(N3) DLLR, 16 7, 0)
+        //COMBO(slashes, &ht NON_US_BSLH FSLH, 16 23, 0)
+        //COMBO(tilde_caret, &ht CARET TILDE2, 13 22, 0)
 
         /* Gaming */
-        COMBO(gaming, &to 4, 28 29, 0)
-        COMBO(game_esc, &kp ESC, 20 21, 4)
-        COMBO(game_tab, &kp TAB, 14 4, 4)
+        COMBO(gaming, &to 5, 28 29, 0)
+        COMBO(game_esc, &kp ESC, 20 21, 5)
+        COMBO(game_tab, &kp TAB, 14 4, 5)
     };
 
 //make N hold be mouse layer
@@ -100,11 +119,11 @@
         default_layer {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &lt 5 A    &kp W         &kp F         &kp P         &kp G             &kp M         &kp L         &kp U         &kp Y         &mt RGUI O
-             &lt 3 Z       &mt LALT R    &mt LCTRL S   &ttab         &kp V             &kp K         &kp N         &mt RCTRL E   &mt RALT I    &kp J
-                           &kp X         &kp C         &kp D                                         &kp H         &kp B         &kp Q
+             &mt LGUI A    &kp W         &kp F         &kp P         &kp G             &kp M         &kp L         &kp U         &kp Y         &mt RGUI O
+             &lt 4 Z       &mt LALT R    &mt LCTRL S   &ttab         &kp V             &kp K         &kp N         &mt RCTRL E   &mt RALT I    &kp J
+                           &kp X         &kp C         &kp D                                         &ht NON_US_HASH COMMA &ht EXCL DOT  &ht NON_US_BSLH FSLH
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp LSHFT     &kp SPACE         &kp BSPC      &lt 2 ENTER
+                                                       &kp LSHFT     &vspace           &kp BSPC      &lt 2 ENTER
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
                
             >;
@@ -117,7 +136,7 @@
              &none         &kp LALT      &kp LCTRL     &none         &none             &ht MINUS PLUS &kp N4       &kp N5        &kp N6        &ht PRCNT STAR
                            &none         &none         &none                                          &kp N1       &kp N2        &kp N3
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &trans        &trans            &kp BSPC       &kp DEL
+                                                       &kp DLLR      &kp LS(N3)        &kp BSPC       &kp DEL
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -125,11 +144,23 @@
         nav_layer {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp LGUI      &none         &none         &none         &none          &kp LG(LS(LEFT)) &kp PG_DN        &kp UP     &kp PG_UP     &kp END
+             &kp LGUI      &none         &none         &none         &none             &kp LG(LS(LEFT)) &kp PG_DN     &kp UP     &kp PG_UP     &kp END
              &none         &kp LALT      &kp LCTRL     &none         &none             &kp HOME      &kp LEFT         &kp DOWN   &kp RIGHT     &kp LA(F4)
                            &none         &none         &none                                         &kp LG(LSHIFT)   &kp C_PP   &kp F13
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &trans        &trans            &none         &none
+        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        sym_layer {
+            bindings = <
+        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+           &kp LBKT        &kp CARET     &kp LBRC      &kp RBRC      &none             &none         &kp EXCL     &kp AMPS      &kp PIPE2     &kp STAR
+           &kp TILDE2      &kp RBKT      &kp LPAR      &kp RPAR      &none             &none         &kp EQUAL    &kp KP_PLUS   &kp KP_MINUS  &kp PRCNT
+                           &kp NON_US_HASH &kp LS(N3)  &kp DLLR                                      &kp UNDER    &kp LS(COMMA) &kp LS(DOT)
+        // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
+                                                       &trans        &none            &kp BSPC       &kp DEL
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
