@@ -41,13 +41,6 @@
             bindings = <&lt 1 T>, <&kp TAB>;
             mods = <(MOD_LALT|MOD_LGUI)>;                
         };
-        /*vspace: v_space {
-            compatible = "zmk,behavior-tap-dance";
-            label = "V_SPACE";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&lt 3 SPACE>, <&kp SPACE>;
-        };*/
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
@@ -55,7 +48,6 @@
             tapping-term-ms = <200>;
             bindings = <&kp N1>, <&kp N2>, <&kp N3>;
         };
-        
     };
 
     combos {
@@ -130,7 +122,7 @@
              &lt 4 Z       &mt LALT R    &mt LCTRL S   &ttab         &kp V             &kp K         &kp N         &mt RCTRL E   &mt RALT I    &ht NON_US_BSLH FSLH
                            &kp X         &kp C         &kp D                                         &kp H         &ht NON_US_HASH COMMA &ht EXCL DOT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp LSHFT     &td0              &kp BSPC      &lt 2 ENTER
+                                                       &kp LSHFT     &lt 3 SPACE       &kp BSPC      &lt 2 ENTER
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
                
             >;
