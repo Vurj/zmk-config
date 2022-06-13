@@ -11,11 +11,11 @@
 
 /* Behavior Settings */
 &mt {
-    tapping-term-ms = <140>;
+    tapping-term-ms = <160>;
     flavor = "tap-preferred";
 };
 &lt {
-    tapping-term-ms = <120>;
+    tapping-term-ms = <160>;
     flavor = "tap-preferred";
     retro-tap;
 };
@@ -28,7 +28,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <160>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -38,6 +38,14 @@
             label = "T_TAB";
             #binding-cells = <0>;
             bindings = <&lt 1 T>, <&kp TAB>;
+            mods = <(MOD_LALT|MOD_LGUI)>;                
+        };
+        vspace: v_space{
+            compatible = "zmk,behavior-mod-morph";
+            label = "T_TAB";
+            #binding-cells = <0>;
+            bindings = <&lt 1 T>, <&kp TAB>;
+            quick_tap_ms = <120>;
             mods = <(MOD_LALT|MOD_LGUI)>;                
         };
     };
