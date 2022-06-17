@@ -110,7 +110,7 @@
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &mt LGUI A    &kp W         &kp F         &lt 4 P       &kp G             &kp M         &kp L         &kp U         &kp Y         &mt RGUI O
-             &lt 5 Z       &mt LALT R    &mt LCTRL S   &ttab         &kp V             &kp K         &kp N       &mt RCTRL E   &mt RALT I    &ht NON_US_BSLH FSLH
+             &lt 5 Z       &mt LALT R    &mt LCTRL S   &ttab         &kp V             &kp K         &kp N         &mt RCTRL E   &mt RALT I    &ht NON_US_BSLH FSLH
                            &kp X         &kp C         &kp D                                         &kp H         &ht NON_US_HASH COMMA &ht EXCL DOT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp LSHFT     &lt 3 SPACE       &kp BSPC      &lt 2 ENTER
@@ -162,7 +162,7 @@
              &none         &none          &kp LALT       &kp LCTRL      &none          &none         &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &none
                            &none          &none          &none                                       &none          &none          &none
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                         &kp LSHFT     &none           &mkp L_CLICK  &mkp R_CLICK
+                                                         &kp LSHFT     &none           &mkp LCLK  &mkp RCLK
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
