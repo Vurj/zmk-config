@@ -199,7 +199,7 @@
              &none         &kp LG(LA(R)) &kp LCTRL     &kp LG(LA(T)) &kp LG(LA(V))      &kp LG(LA(K)) &kp LG(LA(N))  &kp LG(LA(E))  &kp LG(LA(I)) &kp LG(LA(FSLH))
                            &kp LG(LA(X)) &kp LG(LA(C)) &kp LG(LA(D))                                  &kp LG(LA(H))  &kp LG(LA(COMMA)) &kp LG(LA(DOT))   
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp LSHIFT    &kp LG(SPACE)      &none        &kp LG(ENTER)
+                                                       &kp LSHIFT    &kp LG(LA(SPACE))  &none         &kp LG(LA(ENTER))
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
