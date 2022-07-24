@@ -192,14 +192,26 @@
             >;
         };
 
-        function2_layer {
+        wm_layer {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &none         &kp LG(LA(W)) &kp LG(LA(F)) &kp LG(LA(P)) &kp LG(LA(G))      &kp LG(LA(M)) &kp LG(LA(L))  &kp LG(LA(U))  &kp LG(LA(Y)) &kp LG(LA(O))
-             &none         &kp LG(LA(R)) &kp LCTRL     &kp LG(LA(T)) &kp LG(LA(V))      &kp LG(LA(K)) &kp LG(LA(N))  &kp LG(LA(E))  &kp LG(LA(I)) &kp LG(LA(FSLH))
+             &none         &kp LG(LA(W)) &kp LG(LA(F)) &kp LG(LA(P)) &kp LG(LA(G))      &kp LG(LA(M)) &kp LG(LA(L))  &kp LG(LA(U))     &kp LG(LA(Y)) &kp LG(LA(O))
+             &none         &mo 8         &mt LCTRL R   &kp LG(LA(T)) &kp LG(LA(V))      &kp LG(LA(K)) &kp LG(LA(N))  &kp LG(LA(E))     &kp LG(LA(I)) &kp LG(LA(FSLH))
                            &kp LG(LA(X)) &kp LG(LA(C)) &kp LG(LA(D))                                  &kp LG(LA(H))  &kp LG(LA(COMMA)) &kp LG(LA(DOT))   
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp LSHIFT    &kp LG(LA(SPACE))  &none         &kp LG(LA(ENTER))
+        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+        wm_layer2 {
+            bindings = <
+        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+             &none         &none        &none           &none         &none             &none         &kp LG(LA(N7))  &kp LG(LA(N8))  &kp LG(LA(N9)) &none
+             &none         &none        &none           &none         &none             &none         &kp LG(LA(N4))  &kp LG(LA(N5))  &kp LG(LA(N6)) &none
+                           &none        &none           &none                                         &kp LG(LA(N1))  &kp LG(LA(N2))  &kp LG(LA(N3))   
+        // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
+                                                        &kp LSHIFT    &none              &none         &none
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
