@@ -38,7 +38,70 @@
             label = "T_TAB";
             #binding-cells = <0>;
             bindings = <&lt 1 T>, <&kp TAB>;
-            mods = <(MOD_LALT|MOD_LGUI)>;                
+            mods = <(MOD_LALT)>;                
+        };
+        win1: win_1{
+            compatible = "zmk,behavior-mod-morph";
+            label = "WIN_1";
+            #binding-cells = <0>;
+            bindings = <&kp H>, <&kp F1>;
+            mods = <(MOD_LGUI)>;                
+        };
+        win2: win_2{
+            compatible = "zmk,behavior-mod-morph";
+            label = "WIN_2";
+            #binding-cells = <0>;
+            bindings = <&ht NON_US_HASH COMMA>, <&kp F2>;
+            mods = <(MOD_LGUI)>;                
+        };
+        win3: win_3{
+            compatible = "zmk,behavior-mod-morph";
+            label = "WIN_3";
+            #binding-cells = <0>;
+            bindings = <&ht EXCL DOT>, <&kp F3>;
+            mods = <(MOD_LGUI)>;                
+        };
+        win4: win_4{
+            compatible = "zmk,behavior-mod-morph";
+            label = "WIN_4";
+            #binding-cells = <0>;
+            bindings = <&kp N>, <&kp F4>;
+            mods = <(MOD_LGUI)>;                
+        };
+        win5: win_5{
+            compatible = "zmk,behavior-mod-morph";
+            label = "WIN_5";
+            #binding-cells = <0>;
+            bindings = <&mt RCTRL E>, <&kp F5>;
+            mods = <(MOD_LGUI)>;                
+        };
+        win6: win_6{
+            compatible = "zmk,behavior-mod-morph";
+            label = "WIN_6";
+            #binding-cells = <0>;
+            bindings = <&mt RALT I>, <&kp F6>;
+            mods = <(MOD_LGUI)>;                
+        };
+        win7: win_7{
+            compatible = "zmk,behavior-mod-morph";
+            label = "WIN_7";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp F7>;
+            mods = <(MOD_LGUI)>;                
+        };
+        win8: win_8{
+            compatible = "zmk,behavior-mod-morph";
+            label = "WIN_8";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp F8>;
+            mods = <(MOD_LGUI)>;                
+        };
+        win9: win_9{
+            compatible = "zmk,behavior-mod-morph";
+            label = "WIN_9";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&kp F9>;
+            mods = <(MOD_LGUI)>;                
         };
     };
 
@@ -114,9 +177,9 @@
         default_layer {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &mt LGUI A       &kp W         &kp F         &lt 4 P       &kp G             &kp M         &kp L         &kp U         &kp Y         &mt RGUI O
+             &mt LGUI A    &kp W         &kp F         &lt 4 P       &kp G             &kp M         &kp L         &kp U         &kp Y         &mt RGUI O
              &lt 5 Z       &mt LALT R    &mt LCTRL S   &ttab         &kp V             &kp K         &kp N         &mt RCTRL E   &mt RALT I    &ht NON_US_BSLH FSLH
-                           &kp X         &kp C         &kp D                                         &kp H         &ht NON_US_HASH COMMA &ht EXCL DOT
+                           &kp X         &kp C         &kp D                                         &kp H         &ht NON_US_HASH COMMA       &ht EXCL DOT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp LSHFT     &lt 3 SPACE       &kp BSPC      &lt 2 ENTER
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
