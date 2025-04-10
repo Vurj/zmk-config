@@ -313,7 +313,7 @@
              &kp Z       &kp R         &kp S         &kp T          &kp V             &kp K         &kp N         &kp E         &kp I         &kp FSLH
                            &kp X         &kp C         &kp D                          &kp H         &kp COMMA     &ht EXCL DOT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp LSHFT     &lt 3 SPACE       &kp BSPC      &kp  ENTER
+                                                       &kp LSHFT     &kp SPACE       &kp BSPC      &kp  ENTER
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
                
             >;
