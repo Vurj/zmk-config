@@ -167,6 +167,17 @@
         /* Fighting Game */
         COMBO(fight, &to 9, 21 22 23 24, 0)
         COMBO(fight_back, &to 0, 1 8, 9)
+        /* web fishing game */
+        COMBO(fish, &to 10, 4 5, 0)
+        COMBO(fish_back, &to 0, 1 8, 10)
+        COMBO(fish_game_esc, &kp ESC, 20 21, 10)
+        COMBO(fish_game_tab, &kp TAB, 14 4, 10)
+        COMBO(fish_q, &kp Q, 1 2, 10)
+        COMBO(fish_b, &kp B, 2 3, 10)
+        COMBO(fish_j, &kp J, 6 7, 10)
+        COMBO(fish_semi, &kp SEMI, 7 8, 10)
+        COMBO(fish_qt_grave, &ht GRAVE SQT, 16 17, 10)
+        COMBO(fish_dqt_at, &ht DQT AT, 17 18, 10)
     };
 
 //make N hold be mouse layer
@@ -295,5 +306,19 @@
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
+        
+       web_fishing {
+            bindings = <
+        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+             &kp A       &kp W         &kp F         &kp P          &kp G             &kp M         &kp L         &kp U         &kp Y         &kp O
+             &kp Z       &kp R         &kp S         &kp T          &kp V             &kp K         &kp N         &kp E         &kp I         &kp FSLH
+                           &kp X         &kp C         &kp D                          &kp H         &kp COMMA     &ht EXCL DOT
+        // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
+                                                       &kp LSHFT     &lt 3 SPACE       &kp BSPC      &kp  ENTER
+        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+               
+            >;
+        };
+
     };
 };
